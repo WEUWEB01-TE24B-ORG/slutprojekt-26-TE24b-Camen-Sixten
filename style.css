@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --aktiv: #F04419;
+    --text: #EEE0CB;
+    --subtiltext: #404E5C;
+    --bakgrund: #252C2D;
+    --bakgrund2: #564E52;
+    --länk: #50D8D7;
+}
+
+body{
+    background-color: var(--bakgrund);
+}
+header{
+    background-color: var(--bakgrund2);
+    height: 2rem;
+}
+nav{
+
+}
+a{
+    
+}
+a.aktiv{
+
+}
+a.länk{
+    color: var(--länk);
+}
+main{
+
+}
+.post{
+
+}
+article{
+
+}
+h2{
+
+}
+p.bloggtext{
+
+}
