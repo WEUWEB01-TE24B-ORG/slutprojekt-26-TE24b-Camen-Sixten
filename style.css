@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 html {
     box-sizing: border-box;
 }
@@ -20,35 +21,48 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 body{
     background-color: var(--bakgrund);
+    font-family: "Ubuntu"
 }
 header{
     background-color: var(--bakgrund2);
-    height: 2rem;
+    height: 3rem;
+    margin-bottom: 5rem;
 }
 nav{
-
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+    padding: 0.4rem;
 }
 a{
-    
+    font-size: 1.67rem;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 550;
 }
 a.aktiv{
-
+    color: var(--aktiv);
 }
 a.länk{
+    font-size: 1rem;
     color: var(--länk);
 }
 main{
-
+    width: 50%;
+    margin: auto;
+    font-size: ;
 }
 .post{
-
+    background-color: var(--bakgrund2);
+    padding: 1rem;
 }
 article{
-
+    color: var(--text);
 }
-h2{
-
+h2.bloggrubrik{
+    margin-bottom: 1rem;
 }
 p.bloggtext{
-
+    font-family: "EB Garamond"
 }
