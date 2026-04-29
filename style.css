@@ -26,7 +26,11 @@ body{
 header{
     background-color: var(--bakgrund2);
     height: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3.5rem;
+    position: sticky;
+    top: 0;
+    border-bottom: var(--bakgrund) 0.3rem solid;
+
 }
 nav{
     display: flex;
@@ -45,7 +49,7 @@ a.aktiv{
     color: var(--aktiv);
 }
 a.länk{
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: var(--länk);
 }
 main{
@@ -56,6 +60,8 @@ main{
 .post{
     background-color: var(--bakgrund2);
     padding: 1rem;
+    margin-bottom: 3.5rem;
+    border-radius: 0.5rem;
 }
 article{
     color: var(--text);
@@ -64,5 +70,6 @@ h2.bloggrubrik{
     margin-bottom: 1rem;
 }
 p.bloggtext{
+    font-size: 1.2rem;
     font-family: "EB Garamond"
 }
