@@ -22,13 +22,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 body{
     background-color: var(--bakgrund);
     font-family: "Ubuntu";
-    grid-template-areas: 
-    "sidhuvud sidhuvud"
-    "main sidebar"
-    "sidfot sidfot";
 }
 header{
-    grid-area: sidhuvud;
     background-color: var(--bakgrund2);
     height: 3rem;
     margin-bottom: 3.5rem;
@@ -53,11 +48,42 @@ a{
 a.aktiv{
     color: var(--aktiv);
 }
+.kontainer{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "main sidebar"
+}
 main{
     grid-area: main;
-    width: 50%;
-    margin: auto;
+}
+.post{
+    background-color: var(--bakgrund2);
+    padding: 1rem;
+    margin: 0.5rem;
+    margin-bottom: 3.5rem;
+    border-radius: 0.5rem;
+    color: var(--text);
+}
+figure{
+    width: 18rem;
+}
+img{
+    width: 100%;
+}
+.flexfix{
+    display: flex;
 }
 aside{
     grid-area: sidebar;
+}
+.sidoPost{
+    background-color: var(--bakgrund2);
+    padding: 1rem;
+    margin: 0.5rem;
+    margin-bottom: 3.5rem;
+    border-radius: 0.5rem;
+    color: var(--text);
 }
