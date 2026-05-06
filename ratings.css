@@ -5,7 +5,7 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-body, h1, h2, h3, h4, h5, h6, p, ul {
+*{
     margin: 0;
     padding: 0;
 }
@@ -30,7 +30,6 @@ header{
     position: sticky;
     top: 0;
     border-bottom: var(--bakgrund) 0.3rem solid;
-
 }
 nav{
     display: flex;
@@ -53,11 +52,6 @@ a.aktiv{
     width: 80%;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
-    "main sidebar"
-}
-main{
-    grid-area: main;
 }
 .post{
     background-color: var(--bakgrund2);
@@ -66,18 +60,18 @@ main{
     margin-bottom: 3.5rem;
     border-radius: 0.5rem;
     color: var(--text);
+    height: calc(100% - 4rem);
 }
 figure{
-    width: 18rem;
+    width: 30dvw;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 img{
     width: 100%;
 }
 .flexfix{
     display: flex;
-}
-aside{
-    grid-area: sidebar;
 }
 .sidoPost{
     background-color: var(--bakgrund2);
@@ -86,4 +80,12 @@ aside{
     margin-bottom: 3.5rem;
     border-radius: 0.5rem;
     color: var(--text);
+    height: calc(100% - 4rem);
+}
+h2.faktarubrik{
+    margin-bottom: 1rem;
+}
+p{
+    font-size: 1.2rem;
+    font-family: "EB Garamond";
 }
