@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-:root{
+:root {
     --aktiv: #F04419;
     --text: #EEE0CB;
     --subtiltext: #404E5C;
@@ -19,61 +24,66 @@ html {
     --länk: #50D8D7;
 }
 
-body{
+body {
     background-color: var(--bakgrund);
     font-family: "Ubuntu";
 }
-header{
+
+header {
     background-color: var(--bakgrund2);
     height: 3rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
     position: sticky;
     top: 0;
     border-bottom: var(--bakgrund) 0.3rem solid;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 90%;
     margin: auto;
     padding: 0.4rem;
 }
-a{
+
+a {
     font-size: 1.67rem;
     text-decoration: none;
     color: var(--text);
     font-weight: 550;
 }
-a.aktiv{
+
+a.aktiv {
     color: var(--aktiv);
 }
-.kontainer{
+
+.kontainer {
     margin: auto;
-    width: 80%;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    width: 90%;
 }
-.post{
+
+.post {
     background-color: var(--bakgrund2);
     padding: 1rem;
     margin: 0.5rem;
-    margin-bottom: 3.5rem;
     border-radius: 0.5rem;
     color: var(--text);
     height: calc(100% - 4rem);
 }
-figure{
-    width: 30dvw;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-}
-img{
+
+figure {
     width: 100%;
 }
-.flexfix{
-    display: flex;
+
+img {
+    width: 100%;
 }
-.sidoPost{
+
+p.rating {
+    margin-bottom: 1rem;
+}
+
+.sidoPost {
     background-color: var(--bakgrund2);
     padding: 1rem;
     margin: 0.5rem;
@@ -82,10 +92,41 @@ img{
     color: var(--text);
     height: calc(100% - 4rem);
 }
-h2.faktarubrik{
+
+h2.faktarubrik {
     margin-bottom: 1rem;
 }
-p{
+
+p {
     font-size: 1.2rem;
     font-family: "EB Garamond";
+}
+
+@media (min-width: 768px) {
+    nav {
+        width: 40%;
+    }
+
+    .kontainer {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .post {
+        margin-bottom: 3.5rem;
+    }
+
+    figure {
+        width: 30dvw;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .flexfix {
+        display: flex;
+    }
+
+    p.rating {
+        margin-bottom: 0;
+    }
 }
